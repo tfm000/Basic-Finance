@@ -1,16 +1,5 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# Note the implied volatility of a call and a put are the same
-
-# In[1]:
-
-
 from scipy.stats import norm
 import numpy as np
-
-
-# In[2]:
 
 
 class ImpliedVolatility:
@@ -63,20 +52,7 @@ class ImpliedVolatility:
 
 # Examples
 
-# In[3]:
-
-
 ImpliedVolatility('put',0.3215,0.05,50,45,1/6).NewtonCalculation()
 
 
-# In[4]:
-
-
 ImpliedVolatility('call',1.9982,0.05,75,80,1/3).NewtonCalculation()
-
-
-# In[ ]:
-
-
-
-
